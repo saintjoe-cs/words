@@ -2,7 +2,7 @@
 // Brian Capouch written 17 January 2015
 // 
 
-// Establish and array, and functions to print it forwards and backwards
+// Establish an array, and functions to print it forwards and backwards
 //
 
 // Primary data stucture

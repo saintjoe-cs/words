@@ -1,3 +1,11 @@
+// github example homework for problem 2.2 CMP344
+// Brian Capouch written 17 January 2015
+// 
+
+// Establish and array, and functions to print it forwards and backwards
+//
+
+// Primary data stucture
 var words = ["My","dog","has","enormous","fleas"];
 
 // Make d8 look like node

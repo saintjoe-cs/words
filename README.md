@@ -1,2 +1,2 @@
 # words
-Exercise 2.2
+CMP344 Exercise 2.2

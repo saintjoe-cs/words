@@ -20,7 +20,7 @@ if (typeof(process) == "object") {
 var words = ["My","dog","has","enormous","fleas"];
 
 var forwords = function(arr) {
-  console.log('Words done forwards:');
+  write('Words done forwards:\n');
   for ( var i = 0; i < arr.length; ++i ) 
 	print(arr[i]);
   }
@@ -28,7 +28,7 @@ var forwords = function(arr) {
 var backwords = function(arr) {
   process.stdout.write('\nWords done backwards:\n');
   for ( var i = ( arr.length -1 ); i >= 0; i-- )
-	print(arr[i]);
+	console.log(arr[i]);
   }
 
 forwords(words);

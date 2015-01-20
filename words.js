@@ -5,14 +5,16 @@
 // Establish an array, and functions to print it forwards and backwards
 //
 
+// Utility "whoami" function
+if (typeof(process) == "object") {
+  // We are using node.js
+  var print = function(args) {
+	console.log(args);
+	}
+  }
+
 // Primary data stucture
 var words = ["My","dog","has","enormous","fleas"];
-
-// Make d8 look like node
-//   Comment this out to use this code with node
-var print = function(args) {
-  console.log(args);
-  }
 
 // Print in-order
 var forwords = function(arr) {

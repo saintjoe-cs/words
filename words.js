@@ -5,7 +5,7 @@ if (typeof(process) == "object") {
   var write = function(args) {
 	process.stdout.write(args);
 	}
-  } else {
+} else {
   console = new Object();
   console.log = function(args) {
     print(args);

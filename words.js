@@ -1,8 +1,10 @@
-var words = ["My","dog","has","enormous","fleas"];
-
-var print = function(args) {
-  console.log(args);
+if (typeof(process) == "object") {
+  var print = function(args) {
+	console.log(args);
+	}
   }
+
+var words = ["My","dog","has","enormous","fleas"];
 
 var forwords = function(arr) {
   print('Words done forwards:');

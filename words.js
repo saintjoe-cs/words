@@ -5,12 +5,24 @@
 // Establish an array, and functions to print it forwards and backwards
 //
 
-// Utility "whoami" function
-if (typeof(process) == "object") {
-  // We are using node.js
+// Utility code so we can run with either interpreter
+if(typeof(process) == "object") {
   var print = function(args) {
-	console.log(args);
-	}
+        console.log(args);
+        }
+  var write = function(args) {
+        process.stdout.write(args);
+        }
+} else {
+  console = new Object();
+  console.log = function(args) {
+    print(args);
+        }
+  process = new Object();
+  process.stdout = new Object();
+  process.stdout.write = function(args) {
+    write(args);
+    }
   }
 
 // Primary data stucture

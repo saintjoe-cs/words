@@ -13,6 +13,15 @@ if(typeof(process) == "object") {
   var write = function(args) {
         process.stdout.write(args);
         }
+  var read = function(filename) {
+	fs = require('fs')
+        fs.readFile(filename,'utf8',function(err,data) {
+        if (err) {
+            return console.log(err);
+	    }
+	return data;
+	});
+ }
 } else {
   console = new Object();
   console.log = function(args) {
